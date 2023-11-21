@@ -1,0 +1,290 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    position: relative;
+}
+
+header {
+    position: sticky;
+    top: 0px;
+    background-color: black;
+    flex-direction: row;
+    padding: 10px;
+
+}
+
+.container-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header img {
+    height: 40px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+/*SECTION 1*/
+#section-um {
+    height: 100px;
+    min-height: 440px;
+    text-align: center;
+    margin-bottom: 50px;
+    background: white url('imagens/frontpage_hero_mobile-483-copy.png') center no-repeat;
+    background-size: cover;
+}
+
+#section-um h1 {
+    margin: 90px 0px 10px 0px;
+    font-size: 2em;
+}
+
+#section-um p {
+    margin-bottom: 20px;
+    max-width: 300px;
+    margin: auto;
+    font-size: 1.1em;
+    
+}
+
+/*AVISO UNOFFICIAL*/
+#aviso-unofficial {
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+}
+
+#aviso-unofficial h1 {
+    color: red;
+}
+
+#aviso-unofficial a {
+    text-decoration: none;
+    color: gray;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2em;
+    padding: 0px 3px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+}
+
+#aviso-unofficial a:hover {
+    text-decoration: underline;
+    color: gray;
+    border: 1px solid gray;
+}
+
+#site-oficial {
+    margin-top: 30px;
+}
+
+/*SECTION 2*/
+#section-dois {
+    text-align: center;
+    margin: 50px auto 0px auto;
+    padding: 0px 20px;
+}
+
+#section-dois img {
+    width: 100%;
+    margin: auto;
+}
+
+#section-dois div {
+    padding: 25px 0px;
+    margin: auto;
+    text-align: center;
+}
+
+#section-dois a {
+    text-decoration: none;
+}
+
+#section-dois h3 {
+    font-size: 0.9em;
+    font-weight: bolder;
+    color: #FB4A9D;
+}
+
+#section-dois p {
+    padding: 5px 0px 10px 0px;
+    color: black;
+}
+
+/*SECTION 3*/
+#section-tres {
+    margin: auto;
+    text-align: center;
+    color: white;
+}
+
+#section-tres img {
+    width: 100%;
+    max-width: 420px;
+    margin: auto;
+}
+
+#section-tres h1 {
+    padding: 80px 0px 20px 0px;
+    font-size: 2.2em;
+}
+
+#section-tres p {
+    max-width: 420px;
+    margin: auto;
+}
+
+#section-3-um {
+    background: #1F7AEB url(imagens/fundo-escolha-de-brawler.webp) right center no-repeat;
+    background-size: cover;
+}
+
+#section-3-dois {
+    background-color: #1F7AEB;
+}
+
+/*SECTION 4*/
+#section-quatro {
+    text-align: center;
+    padding: 50px 0px;
+    margin: auto;
+}
+
+#section-quatro img {
+    width: 430px;
+}
+
+#section-quatro h2 {
+    font-weight: bolder;
+    font-size: 1.2em;
+    padding-bottom: 20px;
+}
+
+#section-quatro p {
+    text-align: left;
+}
+
+#section-quatro > article > div {
+    padding: 50px 25px 25px 25px;
+    margin: auto;
+    width: 430px;
+    box-shadow: 0px 12px 12px 12px #00000015;
+    line-height: 1.6em;
+}
+
+#section-quatro a {
+    display: block;
+    color: #2E85F3;
+    text-decoration: none;
+    text-align: left;
+    font-weight: bold;
+    font-size: 0.9em;
+    margin: 20px 0px 15px 0px;
+}
+
+/*BUTTONS*/
+#button {
+    text-align: center;
+    margin: auto;
+    display: block;
+    color: white;
+    font-weight: bold;
+    font-weight: bold;
+    border: none;
+    width: 200px;
+    padding: 15px;
+    text-decoration: none;
+}
+
+#section-um #button {
+    background-image: linear-gradient(to right, #1572E6 0%, #1572E6 25%,#2E85F3 25%, #2E85F3 100%);
+    margin: 50px auto 0px auto;
+    border-radius: 20px;
+}
+
+.section-dois-button {
+    background-color: #2E85F3;
+    border-radius: 10px;
+}
+
+#div-button-dois {
+    margin-bottom: 50px;
+}
+
+#section-tres #button {
+    padding: 20px 0px;
+    margin-top: 60px;
+    border-radius: 10px;
+    color: black;
+    background-color: white;
+}
+
+/*FOOTER*/
+footer {
+    background-color: black;
+    color: white;
+    line-height: 1.7em;
+    font-size: 0.8em;
+    padding: 20px 10px;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer #div-logos-e-lojas {
+    padding: 20px 0px 30px 0px;
+    margin: 0px 10px;
+    border-bottom: 1px solid #333333;
+}
+
+#p-footer {
+    padding: 10px 0px;
+}
+
+#icones-footer img {
+    margin-right: 10px;
+    max-height: 25px;
+    height: 100%;
+}
+
+#lojas-footer img {
+    margin-right: 10px;
+    max-height: 40px;
+    height: 100%;
+}
+
+#links-footer {
+    padding: 10px 0px;
+}
+
+#links-footer a {
+    padding: 10px;
+}
+
+#ultima-div-footer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+#ultima-div-footer p {
+    color: #5a5a5a;
+}
+
+#ultima-div-footer img {
+    height: 55px;
+    
+}

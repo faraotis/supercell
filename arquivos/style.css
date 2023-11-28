@@ -20,10 +20,11 @@ header {
 
 }
 
-.container-header {
+nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
 
 header img {
@@ -33,6 +34,72 @@ header img {
 .container {
     display: flex;
     flex-direction: column;
+}
+
+/*MENU*/
+#mobile-menu {
+    cursor: pointer;
+    height: 30px;
+    display: flex;
+    flex-flow: column nowrap;/*shorthand - direction/wrap*/
+    justify-content: space-around;
+    align-items: center;
+}
+
+#mobile-menu > div {
+    border: 1px solid white;
+    width: 28px;
+}
+
+#mobile-menu-open {
+    padding: 0px 20px;
+    background-color: black;
+    display: none;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    margin-left: -10px;
+}
+
+#mobile-menu-open > div {
+    padding-bottom: 70px;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+
+#mobile-menu-open li {
+    list-style: none;
+}
+
+#close {
+    display: none;
+}
+
+#menu-list {
+    color: gray;
+    margin-top: 30px;
+}
+
+#menu-list li {
+    line-height: 2.2em;
+    font-size: 1.5em;
+}
+
+#menu-list li:hover {
+    color: white;
+}
+
+#menu-footer {
+    display: flex;
+    justify-content: space-between;
+    width: 310px;
+    padding: 20px 0px;
+}
+
+#menu-footer img{
+    height: 30px;
 }
 
 /*SECTION 1*/
@@ -203,14 +270,23 @@ header img {
     font-weight: bold;
     border: none;
     width: 200px;
-    padding: 15px;
+    padding: 13px;
     text-decoration: none;
 }
 
 #section-um #button {
+    display: flex;
     background-image: linear-gradient(to right, #1572E6 0%, #1572E6 25%,#2E85F3 25%, #2E85F3 100%);
     margin: 50px auto 0px auto;
     border-radius: 20px;
+}
+
+#section-um #button > div {
+    margin: 4px 0px 0px 30px;
+}
+
+#section-um #button:hover {
+    background-image: linear-gradient(to right, #146cd8 0%, #146cd8 25%,#2a7ae2 25%, #2a7ae2 100%);
 }
 
 .section-dois-button {

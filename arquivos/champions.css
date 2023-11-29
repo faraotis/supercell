@@ -1,0 +1,7 @@
+@charset "UTF-8";
+
+#section-header {
+    background: white url('imagens/default_hero.e9b6e7dd.webp') center top no-repeat scroll;
+    background-size: cover;
+    min-height: 240px;
+}

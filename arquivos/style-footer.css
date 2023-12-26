@@ -1,7 +1,6 @@
 @charset "UTF-8";
 
 /*FOOTER*/
-
 * {
     margin: 0px;
     padding: 0px;
@@ -22,10 +21,12 @@ footer a {
     color: white;
 }
 
-footer #div-logos-e-lojas {
+.div-logos-e-lojas {
+    display: flex;
     padding: 20px 0px 30px 0px;
     margin: 0px 10px;
     border-bottom: 1px solid #333333;
+    align-items: center;
 }
 
 #p-footer {
@@ -63,6 +64,35 @@ footer #div-logos-e-lojas {
 }
 
 #ultima-div-footer img {
-    height: 55px;
-    
+    height: 40px;
+}
+
+@media screen and (min-width: 805px) {
+    footer .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    footer .p-download-footer {
+        display: none;
+    }
+
+    footer .div-logos-e-lojas {
+        border-bottom: 1px solid transparent;
+    }
+
+    footer #primeira-div-footer {
+        border-bottom: 1px solid #333333;
+    }
+
+    #ultima-div-footer img {
+        height: 35px;
+        margin-right: 10px;
+    }
+}
+
+@media screen and (min-width: 1066px) {
+    #links-footer {
+        justify-content: left;
+    }
 }

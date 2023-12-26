@@ -19,68 +19,11 @@ header {
     height: 60px;
 }
 
-/* MEDIA QUERY DO HEADER */
-
-
-/*
-
-LEMBRE-SE DE MUDAR O TAMANHO DAS IMAGENS DO HEADER
-
-*/
-
-@media screen and (min-width: 805px) {
-    header {
-        width: 785px;
-        margin: auto;
-    }
-}
-@media screen and (min-width: 1066px) {
-    header {
-        width: 1046px;
-        height: 70px;
-    }
-
-    nav {
-        padding: 5px 0px;
-        margin: auto;
-    }
-}
-@media screen and (min-width: 1297px) {
-    header {
-        width: 1277px;
-        height: 80px;
-    }
-
-    nav {
-        padding: 10px 0px;
-        margin: auto;
-    }
-
-    nav img {
-        height: 10px;
-    }
-}
-@media screen and (min-width: 1695px) {
-    header {
-        width: 1675px;
-    }
-
-    nav {
-        padding: 15px 0px;
-        margin: auto;
-    }
-}
-/**/
-
 nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-}
-
-#img-header {
-    height: 20px;/*40px*/
 }
 
 .container {
@@ -174,7 +117,6 @@ nav {
     max-width: 300px;
     margin: auto;
     font-size: 1.1em;
-    
 }
 
 /*AVISO UNOFFICIAL*/
@@ -212,7 +154,6 @@ nav {
 #section-dois {
     text-align: center;
     margin: 50px auto 0px auto;
-    padding: 0px 20px;
 }
 
 #section-dois img {

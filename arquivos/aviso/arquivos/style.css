@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    height: 97vh;
+    width: 97vw;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    position: relative;
+    /**/
+    background: #b9b9b9 url('img/foto-retrato.jpeg') center no-repeat fixed;
+    background-size: cover;
+}
+
+div {
+    background-color: #ffffffba;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    border: 2px solid black;
+    width: 360px;
+    padding: 20px 0px;
+}
+
+h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2.3em;
+    color: red;
+}
+
+p {
+    font-size: 1.1em;
+    margin: 10px 0px 15px 0px;
+    font-weight: bolder;
+}
+
+p strong {
+    text-decoration: underline;
+}
+
+a {
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    text-decoration: none;
+    color: white;
+    background-color: gray;
+    padding: 5px 10px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (min-width: 850px) {
+    body {
+        background: #b9b9b9 url('img/foto-paisagem.jpeg') center no-repeat fixed;
+        background-size: cover;
+    }
+
+    div {
+        background-color: #ffffffba;
+        width: 450px;
+        padding: 20px;
+    }
+}

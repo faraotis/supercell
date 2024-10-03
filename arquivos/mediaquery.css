@@ -204,3 +204,33 @@
         padding: 10px 0px 80px 0px;
     }
 }
+
+@media screen and (min-width: 805px) {
+    footer .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    footer .p-download-footer {
+        display: none;
+    }
+
+    footer .div-logos-e-lojas {
+        border-bottom: 1px solid transparent;
+    }
+
+    footer #primeira-div-footer {
+        border-bottom: 1px solid #333333;
+    }
+
+    #ultima-div-footer img {
+        height: 35px;
+        margin-right: 10px;
+    }
+}
+
+@media screen and (min-width: 1066px) {
+    #links-footer {
+        justify-content: left;
+    }
+}

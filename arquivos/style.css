@@ -11,12 +11,98 @@ body {
     position: relative;
 }
 
+/* HEADER */
+
 header {
     position: sticky;
     top: 0px;
     background-color: black;
     flex-direction: row;
     height: 60px;
+    padding: 10px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    height: 40px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+/*MENU*/
+#mobile-menu {
+    cursor: pointer;
+    height: 30px;
+    display: flex;
+    flex-flow: column nowrap;/*shorthand - direction/wrap*/
+    justify-content: space-around;
+    align-items: center;
+}
+
+#mobile-menu > div {
+    border: 1px solid white;
+    width: 28px;
+}
+
+#mobile-menu-open {
+    padding: 0px 20px;
+    background-color: black;
+    display: none;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    margin-left: -10px;
+}
+
+#mobile-menu-open > div {
+    padding-bottom: 70px;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+
+#mobile-menu-open li {
+    list-style: none;
+}
+
+#close {
+    display: none;
+    cursor: pointer;
+}
+
+#menu-list {
+    color: gray;
+    margin-top: 30px;
+}
+
+#menu-list li {
+    line-height: 2.2em;
+    font-size: 1.5em;
+}
+
+#menu-list li:hover {
+    color: white;
+}
+
+#menu-footer {
+    display: flex;
+    justify-content: space-between;
+    width: 310px;
+    padding: 20px 0px;
+}
+
+#menu-footer img{
+    height: 30px;
 }
 
 nav {
@@ -297,4 +383,73 @@ nav {
     border-radius: 10px;
     color: black;
     background-color: white;
+}
+
+
+
+/*FOOTER*/
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    line-height: 1.7em;
+    font-size: 0.8em;
+    padding: 20px 10px;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+.div-logos-e-lojas {
+    display: flex;
+    padding: 20px 0px 30px 0px;
+    margin: 0px 10px;
+    border-bottom: 1px solid #333333;
+    align-items: center;
+}
+
+#p-footer {
+    padding: 10px 0px;
+}
+
+#icones-footer img {
+    margin-right: 10px;
+    max-height: 25px;
+    height: 100%;
+}
+
+#lojas-footer img {
+    margin-right: 10px;
+    max-height: 40px;
+    height: 100%;
+}
+
+#links-footer {
+    padding: 10px 0px;
+}
+
+#links-footer a {
+    padding: 10px;
+}
+
+#ultima-div-footer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+#ultima-div-footer p {
+    color: #5a5a5a;
+}
+
+#ultima-div-footer img {
+    height: 40px;
 }
